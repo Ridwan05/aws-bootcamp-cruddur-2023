@@ -10,7 +10,11 @@
 - Got the apps running via individual container
 - Created a docker-compose file
 - Got both containers to run side by side using docker-compose file
+- Implement backend notification  
+![backend](asset/backend.png)
 
+- Implement frontend notification  
+ ![frontend](asset/frontend.png)
 ## Homework Challenge
 - Pushed and tagged image to dockerhub  
 ![push & tag](asset/docker_tag%26push.png)
