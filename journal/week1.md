@@ -30,4 +30,5 @@
      timeout: 10s
    
  ```
- - I already have docker installed on my system, I cloned this repo and run the containers on my local system
+ - I already have docker installed on my system, I cloned this repo and ran the containers on my local system  
+   ![Container_running_locally](asset/container_local.png)
