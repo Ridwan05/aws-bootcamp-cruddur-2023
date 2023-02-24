@@ -44,3 +44,5 @@
  - Cloned this repo to the EC2 and ran containers  
    
    ![Containers_on_EC2](asset/containers_EC2.png)
+   
+ - Cleaned up AWS resources
