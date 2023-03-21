@@ -21,8 +21,19 @@ open src/app.jss file and paste this
     });
 ```
 set value for env variables under frontend in yml file
-REACT_AWS_PROJECT_REGION,
-REACT_APP_AWS_COGNITO_IDENTITY_POOL_ID,
+REACT_APP_AWS_PROJECT_REGION,
 REACT_APP_AWS_COGNITO_REGION,
 REACT_APP_AWS_USER_POOLS_ID,
 REACT_APP_CLIENT_ID,
+
+Inside our HomeFeedPage.js
+
+import { Auth } from 'aws-amplify';
+
+
+
+This has finally been added to AWSCLI: https://docs.aws.amazon.com/cli/latest/reference/cognito-idp/admin-set-user-password.html
+
+You can change a user's password and update status using:
+
+aws cognito-idp admin-set-user-password --user-pool-id us-east-1_t8KjqKPEf --username ridwan --password Abuja123$ --permanent
