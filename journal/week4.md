@@ -28,3 +28,21 @@ aws rds create-db-instance \
   gp env  CONNECTION_URL="postgresql://postgres:password@localhost:5432/cruddur"
   export PROD_CONNECTION_URL="postgresql://cruddurroot:Khadijah74@cruddur-db-instance.ci48gurczxnm.us-east-1.rds.amazonaws.com:5432/cruddur"
   gp env  PROD_CONNECTION_URL="postgresql://cruddurroot:Khadijah74@cruddur-db-instance.ci48gurczxnm.us-east-1.rds.amazonaws.com:5432/cruddur"
+
+  chmod u+x bin/db-connect
+  chmod u+x bin/db-create
+  chmod u+x bin/db-drop
+  chmod u+x bin/db-schema-load
+  chmod u+x bin/db-seed
+  chmod u+x bin/db-sessions
+  chmod u+x bin/db-setup
+  chmod u+x bin/rds-update-sg-rule
+
+  pip install -r requirements.txt
+
+  GITPOD_IP=$(curl ifconfig.me)
+
+export DB_SG_ID="sg-06bd0d82272a02c12"
+gp env DB_SG_ID="sg-06bd0d82272a02c12"
+export DB_SG_RULE_ID="sgr-082495c1abe52e9d7"
+gp env DB_SG_RULE_ID="sgr-082495c1abe52e9d7"
