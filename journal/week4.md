@@ -46,3 +46,6 @@ export DB_SG_ID="sg-06bd0d82272a02c12"
 gp env DB_SG_ID="sg-06bd0d82272a02c12"
 export DB_SG_RULE_ID="sgr-082495c1abe52e9d7"
 gp env DB_SG_RULE_ID="sgr-082495c1abe52e9d7"
+
+
+arn:aws:lambda:us-east-1:898466741470:layer:psycopg2-py38:2
